@@ -1,0 +1,206 @@
+body{
+  height: 300vh;
+  margin: 0; /* Évite un petit espace en haut de la page */
+  background-image: url(../img/background2.svg);
+  background-size: cover; /* Couvre toute la surface */
+  background-position: center; /* Centre l'image */
+  background-attachment: fixed; /* Fait en sorte que l'image reste fixe lors du défilement */
+  background-repeat: no-repeat; /* Évite de répéter l'image */
+}
+main{
+  position : fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ne pas toucher aux éléments ci-dessus. On travail c'est ce qui permet d'avoir une page que l'on peut 
+"scroller" mais qui visuellement ne bouge pas. */
+
+#C1{
+  position: absolute;
+  height: 59.72vh;
+  width: 32.96vw;
+  top: 30.64vh;
+  left: 65.95vw;
+  z-index: 2;
+}
+
+#C2{
+  position: absolute;
+  height: 72.89vh;
+  width: 45.43vw;
+  top: 5.00vh;
+  left: 4.02vw;
+  z-index: 2;
+}
+
+#C3{
+  position: absolute;
+  height: 23.61vh;
+  width: 12.50vw;
+  top: 2.50vh;
+  left: 61.9vw;
+  z-index: 2;
+ }
+
+#C4{
+  position: absolute;
+  height: 17.96vh;
+  width: 9.14vw;
+  top: 73.11vh;
+  left: 47vw;
+  z-index: 2;
+}
+
+
+
+
+
+
+ 
+.mask-1{
+  mask-image: url(../img/forme\ pleine\ 1.svg);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Important : occupe tout le conteneur */
+  height: 100%; 
+  height: 17.96vh;
+  width: 9.14vw;
+  top: 73.11vh;
+  left: 47.05vw; 
+  background-color: transparent; 
+  overflow: hidden;
+  background-image: radial-gradient(circle, rgb(50, 10, 87) 0%, rgba(153,90,230,1) 13%, rgba(57,70,241,1) 25%, rgba(45,194,246,1) 60%, rgba(0,255,239,1) 100%);
+ background-size: 135%, auto;
+ background-position: center, center;
+ background-repeat: no-repeat;
+ 
+}
+
+.mask-1::before {
+  content: ''; /* Nécessaire pour créer un élément vide */
+  position: absolute;
+  top: -28%;
+  left: -28%;
+  width: 156%; /* Important : occupe tout le mask */
+  height: 156%; 
+
+ 
+  
+  /* Afficher l'image orange en arrière-plan */
+  background-image: url(../img/orange\ 4.svg);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+.mask-2{
+  mask-image: url(../img/forme\ pleine\ 2.svg);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Important : occupe tout le conteneur */
+  height: 100%; 
+  height: 72.89vh;
+  width: 45.43vw;
+  top: 5.00vh;
+  left: 4vw;
+  background-color: transparent;
+  overflow: hidden;
+  background-image: radial-gradient(circle, rgb(50, 10, 87) 0%, rgba(153,90,230,1) 13%, rgba(57,70,241,1) 25%, rgba(45,194,246,1) 60%, rgba(0,255,239,1) 100%);
+ background-size: calc(88% + 20vw), auto;
+ background-position: center, center;
+ background-repeat: no-repeat;
+
+}
+
+.mask-2::before {
+  content: ''; /* Nécessaire pour créer un élément vide */
+  position: absolute;
+  top: -12%;
+  left: -12%;
+  width: 124%; /* Important : occupe tout le mask */
+  height: 124%; 
+  
+  /* Afficher l'image orange en arrière-plan */
+  background-image: url(../img/orange\ 2.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+
+
+
+.mask-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Important : occupe tout le conteneur */
+  height: 100%; /* Important : occupe tout le conteneur */
+  width: 32.96vw;
+  height: 59.72vh;
+  top: 30.64vh;
+  left: 65.95vw;
+  overflow: hidden;
+  position: absolute;
+  mask-image: url(../img/forme\ pleine\ 3.svg);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  background-color: transparent;
+  background-image: radial-gradient(circle, rgb(50, 10, 87) 0%, rgba(153, 90, 230, 1) 13%, rgba(57, 70, 241, 1) 25%, rgba(45, 194, 246, 1) 60%, rgba(0, 255, 239, 1) 100%);
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: calc(90% + 10vw), auto; /* Taille relative pour le dégradé */
+
+}
+
+.mask-3::before {
+  content: '';
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  width: 130%; /* Important : occupe tout le mask */
+  height: 130%; /* Important : occupe tout le mask */
+  background-image: url(../img/orange\ 1.svg);
+  background-size: contain; /* L'image s'adapte au mask */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mask-4{
+  mask-image: url(../img/forme\ pleine.svg);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Important : occupe tout le conteneur */
+  height: 100%; /* Important : occupe tout le conteneur */
+  height: 23.61vh;
+  width: 12.50vw;
+  top: 2.50vh;
+  left: 61.85vw;
+  background-color: transparent;
+  overflow: hidden;
+  background-image: radial-gradient(circle, rgb(50, 10, 87) 0%, rgba(153,90,230,1) 13%, rgba(57,70,241,1) 25%, rgba(45,194,246,1) 60%, rgba(0,255,239,1) 100%);
+  background-size: 100%, auto;
+  background-position: center, center;
+  background-repeat: no-repeat;
+
+ }
+
+.mask-1::before,.mask-2::before,.mask-3::before{
+
+    opacity: 0; /* Par défaut, opacité à 0 */
+    transition: opacity 1.0s ease;
+}
+
+.mask-1.active::before,.mask-2.active::before, .mask-3.active::before {
+  opacity: 1;
+}
